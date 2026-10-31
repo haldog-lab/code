@@ -1,0 +1,31 @@
+<Window x:Class="Shelf.Windows.MainWindow"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ Title="Shelf — 第1段階" Width="300" Height="440" MinWidth="240" MinHeight="260"
+ Topmost="True" ResizeMode="CanResizeWithGrip" WindowStartupLocation="Manual"
+ AllowDrop="True" DragOver="Window_DragOver" Drop="Window_Drop"
+ SourceInitialized="Window_SourceInitialized" Background="#F4F6FA">
+ <Grid Margin="12">
+  <Grid.RowDefinitions>
+   <RowDefinition Height="Auto"/><RowDefinition Height="*"/>
+   <RowDefinition Height="Auto"/><RowDefinition Height="Auto"/>
+  </Grid.RowDefinitions>
+  <TextBlock Text="Shelf  /  ファイルをここにドロップ" FontWeight="SemiBold" Margin="0,0,0,10"/>
+  <ListBox x:Name="FileList" Grid.Row="1" ItemsSource="{Binding Items}"
+   SelectionMode="Single" HorizontalContentAlignment="Stretch"
+   PreviewMouseLeftButtonDown="FileList_PreviewMouseLeftButtonDown"
+   PreviewMouseMove="FileList_PreviewMouseMove">
+   <ListBox.ItemTemplate>
+    <DataTemplate>
+     <StackPanel Margin="4" ToolTip="{Binding FilePath}">
+      <TextBlock Text="{Binding Name}" TextTrimming="CharacterEllipsis" FontWeight="SemiBold"/>
+      <TextBlock Text="{Binding FilePath}" TextTrimming="CharacterEllipsis" FontSize="11" Foreground="#606875"/>
+     </StackPanel>
+    </DataTemplate>
+   </ListBox.ItemTemplate>
+  </ListBox>
+  <Button Grid.Row="2" Content="選択項目を棚から取り除く" Click="Remove_Click" Margin="0,10,0,8" Padding="6"/>
+  <TextBlock x:Name="Status" Grid.Row="3" Text="取り出しても棚に残ります。元ファイルは変更しません。"
+   TextWrapping="Wrap" FontSize="12" AutomationProperties.LiveSetting="Polite"/>
+ </Grid>
+</Window>
