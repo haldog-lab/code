@@ -7,6 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B14A74C7-512
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shelf.Windows", "src\Shelf.Windows\Shelf.Windows.csproj", "{F794443A-5227-41F7-A52D-B3A9B854181A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shelf.Core", "src\Shelf.Core\Shelf.Core.csproj", "{278497EC-C0EA-4DF7-9820-852BD450D248}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{13002113-B81C-4006-9347-CCC0980A05CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shelf.Core.Tests", "tests\Shelf.Core.Tests\Shelf.Core.Tests.csproj", "{D8E59791-1881-4CE8-BF2F-1584E0DC1D10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +26,18 @@ Global
 		{F794443A-5227-41F7-A52D-B3A9B854181A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F794443A-5227-41F7-A52D-B3A9B854181A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F794443A-5227-41F7-A52D-B3A9B854181A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{278497EC-C0EA-4DF7-9820-852BD450D248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278497EC-C0EA-4DF7-9820-852BD450D248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278497EC-C0EA-4DF7-9820-852BD450D248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{278497EC-C0EA-4DF7-9820-852BD450D248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8E59791-1881-4CE8-BF2F-1584E0DC1D10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8E59791-1881-4CE8-BF2F-1584E0DC1D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8E59791-1881-4CE8-BF2F-1584E0DC1D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8E59791-1881-4CE8-BF2F-1584E0DC1D10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F794443A-5227-41F7-A52D-B3A9B854181A} = {B14A74C7-5129-4F8D-BAD4-B4025856AC81}
+		{278497EC-C0EA-4DF7-9820-852BD450D248} = {B14A74C7-5129-4F8D-BAD4-B4025856AC81}
+		{D8E59791-1881-4CE8-BF2F-1584E0DC1D10} = {13002113-B81C-4006-9347-CCC0980A05CA}
 	EndGlobalSection
 EndGlobal

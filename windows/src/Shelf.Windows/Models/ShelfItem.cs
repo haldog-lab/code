@@ -6,4 +6,5 @@ namespace Shelf.Windows.Models;
 public sealed record ShelfItem(string FilePath)
 {
     public string Name => Path.GetFileName(FilePath);
+    public string Availability => File.Exists(FilePath) ? "" : "見つかりません（参照は保持しています）";
 }

@@ -7,5 +7,9 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Version>0.2.0</Version>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Shelf.Core/Shelf.Core.csproj" />
+  </ItemGroup>
 </Project>
